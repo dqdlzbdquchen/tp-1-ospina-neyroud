@@ -91,34 +91,38 @@
 		* La première éxécution de commande permet d'écrire "yo" dans le fichier plop (il est créé s'il n'existe pas) et la seconde commande va rajouter le texte "yo" à la fin du fichier.
 		
 	Question 10 : A quoi sert la commande file ? Essayez la sur des fichiers de types différents.
-		*
+		* La commande "file" permet gràce à ses tests de déterminer le type de fichier présent en utilisant les metadonnées du fichier sans se soucier de l'extension (ASCCI, empty...).
 		
 	Question 11 : Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier
 	avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi :
 	qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?
-		*
+		* en affichant le contenu de titi on observe exactement le même contenu que celui de toto.
+		* En supprimant le fichier toto le lien s'est rompu et titi existe toujours avec son contenu.
 		
 	Question 12 : Créez à présent un lien symbolique tutu sur titi avec la commande ln -s titi tutu. Modifiez le
 	contenu de titi ; quelle conséquence pour tutu ? Et inversement ? Supprimez le fichier titi ; quelle
 	conséquence cela a-t-il sur tutu ?
-		*
+		* On peut créer du contenu dans les 2 fichiers à partir de l'un ou de l'autre. Mais une fois l'un des fichiers supprimé le lien se rompt définitivement et le contenu est supprimé.
 		
 	Question 13 : Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et
 	reprendre le défilement à l’écran ?
-		*
+		* Il faut taper la commande "ctrl+Z" et de taper "bg" pour déplacer le processus en background.
 	
 	Question 14 : Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les
 	lignes 10 à 20.
-		*
+		* Il faut exécuter "head -5 /var/log/syslog"
+		* Il faut exécuter "tail -15 /var/log/syslog"
+		* Il faut exécuter "sed -n 10,20p /var/log/syslog"
 		
 	Question 15 : Que fait la commande dmesg | less ?
-		*
+		* La commande "dmesg" affiche le buffer du noyau.
+		* L'option "less" permet d'afficher le contenu page par page et permet de naviguer.
 		
 	Question 16 : Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page de manuel de ce fichier ?
-		*
+		* Le fichier /etc/passwd contient les mots de passe cryptés des utilisateurs.
 		
 	Question 17 : Affichez seulement la première colonne triée par ordre alphabétique inverse
-		*
+		* Pour afficher la première colonne du fichier /etc/passwd triée par ordre alphabétique inverse, il faut taper respectivement les 2 commandes suivantes : "cut -c1 /etc/passwd > toto.txt" puis "sort -r toto.txt".
 		
 	Question 18 : Quelle commande nous donne le nombre d’utilisateurs ?
 		*
@@ -127,7 +131,7 @@
 		*
 		
 	Question 20 : A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine
-		*
+		* find / name passwd
 		
 	Question 21 : Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier ~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null
 		*
