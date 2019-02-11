@@ -15,12 +15,14 @@
 		* La commande which renvoie le chemin des fichiers (ou liens) qui seraient éxécutés dans l'environnement courant si ddes arguments avaient été données comme commandes dans un interpréteur de commandes strictement conforme à POSIX. pour ce faire, which cherche dans la variable PATH les fichiers éxécutables correspondant aux noms des arguments. which ne normalise pas les chemins.
 		
 	Question 2 : Quelle commande permet de rechercher le mot option dans cette page ?
-	
+		* Lorsque l'on a tapé "man which" on tape ensuite "/options".
+		
 	Question 3 : Comment quitte-t-on le manuel ?
-		* On quitte le manuel en pressant la touche "q"
+		* On quitte le manuel en pressant la touche "q".
 	
 	Question 4 : Afficher la première page de la section 6 ; de quoi parle cette section ?
-	
+		* On tape la commande "man 6 intro".
+			
 	** Navigation dans l’arborescence des fichiers **
 
 
