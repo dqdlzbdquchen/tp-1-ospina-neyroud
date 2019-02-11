@@ -44,7 +44,20 @@
 		* On nous demande de saisir le mdp admin mais au final on obtient un "command not found". La commande "sudo" n'est disponible qu'en bash.
 		
 	Question 7 : à partir de votre dossier personnel, créez l’arborescence suivante :
-		* 
+		* mkdir Dossier1 Dossier2 Dossier2/Dossier2.1 Dossier2/Dossier2.2
+		* touch Dossier1/Fichier1 Dossier2/Dossier2.2/Fichier2 Dossier2/Dossier2.2/Fichier3 
+		
+	Question 8 : revenez dans votre dossier personnel ; à l’aide de la commande rm, essayez de supprimer Fichier1, puis Dossier1 ; que se passe-t-il ?
+		*
+	
+	Question 9 : quelle commande permet de supprimer un dossier ?
+		*
+
+	Question 10 : que se passe-t-il quand on applique cette commande à Dossier2 ?
+		*
+
+	Question 11 : comment supprimer en une seule commande Dossier2 et son contenu ?
+		*
 
 
 
