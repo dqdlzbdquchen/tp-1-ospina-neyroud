@@ -9,8 +9,10 @@
 
 	* __Exercice 2. Prise en main de l’interpréteur de commandes__
 	
-	Question 1 : 
-		* 
+	Question 1 : A l’aide du manuel, identifiez le rôle de la commande which
+		* La commande which renvoie le chemin des fichiers (ou liens) qui seraient éxécutés dans l'environnement courant si ddes arguments avaient été données comme commandes dans un interpréteur de commandes strictement conforme à POSIX. pour ce faire, which cherche dans la variable PATH les fichiers éxécutables correspondant aux noms des arguments. which ne normalise pas les chemins.
+		
+	Question 2 : Quelle commande permet de rechercher le mot option dans cette page ?
 
 	* __Exercice 3. Découverte de l’éditeur de texte nano__
 	
