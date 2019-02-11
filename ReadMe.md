@@ -48,17 +48,16 @@
 		* touch Dossier1/Fichier1 Dossier2/Dossier2.2/Fichier2 Dossier2/Dossier2.2/Fichier3 
 		
 	Question 8 : revenez dans votre dossier personnel ; à l’aide de la commande rm, essayez de supprimer Fichier1, puis Dossier1 ; que se passe-t-il ?
-		*
+		* Ca ne le supprime pas car le dossier n'est pas vide.
 	
 	Question 9 : quelle commande permet de supprimer un dossier ?
-		*
+		* Il suffit de saisir "rmdir" pour supprimer le dossier vide.
 
 	Question 10 : que se passe-t-il quand on applique cette commande à Dossier2 ?
-		*
+		* Le dossier n'est pas supprimé car il n'est pas vide.
 
 	Question 11 : comment supprimer en une seule commande Dossier2 et son contenu ?
-		*
-
+		* Il suffit de saisir "rm -rf" pour supprimer le dossier (et son contenu).
 
 
 	* __Exercice 3. Découverte de l’éditeur de texte nano__
