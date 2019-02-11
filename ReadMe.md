@@ -63,32 +63,32 @@
 	* __Exercice 3. Découverte de l’éditeur de texte nano__
 	
 	Question1 : Quelle commande permet d’afficher l’heure ? A quoi sert la commande time ?
-		* 
+		* Il suffit de saisir "date +%T". time renvoie l'heure actuelle sous forme du nombre de secondes écoulées depuis le 1er janvier 1970 à 00h 00m 00s GMT, le début de l'Ère Unix.
 		
 	Question2 : Dans votre dossier personnel, tapez successivement les commandes ls puis la ; que peut-on en déduire
 	sur les fichiers commençant par un point ?
-		*
+		* Les fichiers commençant par un point sont des fichiers cachés.
 		
 	Question3 : Où se situe le programme ls ?
-		*
+		* Grace à la commande "whereis ls" on voit qu'il est situé dans le dossier /bin/ls /usr/share/man/man1/ls.1.gz
 		
 	Question 4 : Que fait la commande ll ? (indice : la commande alias peut vous aider)
-		*
+		* Elle permet de lister tout le contenu présent dans le répertoire actuel (avec des données supplémentaires tel que les droits).
 		
 	Question 5 : Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ?
-		*
+		* Grace à la commande "ls /bin".
 		
 	Question 6 : Que fait la commande ls .. ?
-		*
+		* Elle affiche le contenu du dossier parent.
 		
 	Question 7 : Quelle commande donne le chemin complet du dossier courant ?
-		*
+		* Grace à la commande "pwd".
 		
 	Question 8 : Que fait la commande echo 'yo' > plop exécutée 2 fois ?
-		*
+		* La première éxécution de commande permet d'écrire "yo" dans le fichier plop (il est créé s'il n'existe pas) et la seconde commande va écraser le contenu du fichier.
 		
 	Question 9 : Que fait la commande echo 'yo' >> plop exécutée 2 fois ?
-		*
+		* La première éxécution de commande permet d'écrire "yo" dans le fichier plop (il est créé s'il n'existe pas) et la seconde commande va rajouter le texte "yo" à la fin du fichier.
 		
 	Question 10 : A quoi sert la commande file ? Essayez la sur des fichiers de types différents.
 		*
