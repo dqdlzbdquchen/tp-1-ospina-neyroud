@@ -4,8 +4,8 @@
 
 	* __Exercice 1. Installation du serveur__
 	
-	Question 1 : 
-		* 
+	Création de la VM serveur en suivant les instructions puis clonage de cette VM en client.
+
 
 	* __Exercice 2. Prise en main de l’interpréteur de commandes__
 	
