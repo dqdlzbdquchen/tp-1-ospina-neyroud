@@ -24,9 +24,27 @@
 		* On tape la commande "man 6 intro".
 			
 	** Navigation dans l’arborescence des fichiers **
+	
+	Question 1 : allez dans le dossier /var/log
+		* On tape la commande "cd /var/log".
+		
+	Question 2 : remontez dans le dossier parent (/var) en utilisant un chemin relatif
+		* On éxécute la commande "cd ..".
+		
+	Question 3 : retournez dans le dossier personnel
+		* On éxécute la commande "cd ~".
+		
+	Question 4 : revenez au dossier précédent (/var)
+		* On éxécute la commande "cd /var".
+		
+	Question 5 : essayez d’accéder au dossier /root ; que se passe-t-il ?
+		* On obtient une erreur système : "permission denied".
 
-
-
+	Question 6 : essayez la commande sudo cd /root ; que se passe-t-il ? Expliquez
+		* On nous demande de saisir le mdp admin mais au final on obtient un "command not found". La commande "sudo" n'est disponible qu'en bash.
+		
+	Question 7 : à partir de votre dossier personnel, créez l’arborescence suivante :
+		* 
 
 
 
