@@ -125,34 +125,28 @@
 		* Pour afficher la première colonne du fichier /etc/passwd triée par ordre alphabétique inverse, il faut taper respectivement les 2 commandes suivantes : "cut -c1 /etc/passwd > toto.txt" puis "sort -r toto.txt".
 		
 	Question 18 : Quelle commande nous donne le nombre d’utilisateurs ?
-		*
+		* La commande "wc -l /etc/passwd" permet de compter le nombre de lignes du fichier, et donc le nombre d'utilisateurs.
 		
 	Question 19 : Combien de pages de manuel comportent le mot-clé conversion dans leur description ?
-		*
+		* La commande "man -k conversion | wc -1" permet d'afficher les pages du manuel comportant le mot "conversion"
 		
 	Question 20 : A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine
-		* find / name passwd
+		* La commande "find -name passwd" permet de rechercher tous les fichiers se nommant passwd
 		
 	Question 21 : Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier ~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null
-		*
+		* La commande "find -name passwd > list_passwd_files.text 2> /dev/null" permet de rechercher tous les fichiers nommé passwd. ">" permet de sauver les recherche dans le fichier nommé ensuite et 2> permet de sauver les erreurs.
 	
 	Question 22 : Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu
 	précédemment
-		*
+		* La commande "grep 'alias ll'" permet de retrouver l'alias.
 	
 	Question 23 : Utilisez la commande locate pour trouver le fichier history.log.
-		*
 		
 	Question 24 : Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ? 
-		* 
+		* La commande "locate history.log" permet de trouver le log history. On ne trouve pas le fichier créé dans le dossier personnel avec la commande "locate" puisque le fichier n'a pas été ajouté à la base de donnée que parcourt la commande locate. Il faut raffraichir cette base de donnée pour afficher le dossier.
+
 
 	* __Exercice 4. Personnalisation du shell__
 	
-	Question 1 : 
-		* 
-
-	* __Exercice 5. Pour les plus rapides__
-	
-	Question 1 : 
-		* 
+	La commande "source .bashrc" permet de recharger le fichier .bashrc Afin d'obtenir le même affichage que l'énnoncé, on utilise la commande "PS1='${debian_chroot:+($debian_chroot)}[\033[35m]\A[\033[00m]-[\033[01;92m]\u@\h[\033[00m]:[\033[94m]\w[\033[00m]$'"
 
