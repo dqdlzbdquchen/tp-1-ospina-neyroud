@@ -146,5 +146,8 @@ La commande ```locate history.log``` permet de trouver le log history. On ne tro
 ## Exercice 4. Personnalisation du shell
 	
 La commande ```source .bashrc``` permet de recharger le fichier .bashrc.  
-Afin d'obtenir le même affichage que l'énnoncé, on utilise la commande ```PS1='${debian_chroot:+($debian_chroot)}[\033[35m]\A[\033[00m]-[\033[01;92m]\u@\h[\033[00m]:[\033[94m]\w[\033[00m]$'```
+Afin d'obtenir le même affichage que l'énnoncé, on utilise la commande : 
+```bash
+PS1='${debian_chroot:+($debian_chroot)}[\033[35m]\A[\033[00m]-[\033[01;92m]\u@\h[\033[00m]:[\033[94m]\w[\033[00m]$'
+```
 
